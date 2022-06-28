@@ -14,7 +14,11 @@
   justify-content: baseline;
 
   &__logo {
-    color: rgb(237, 132, 11);
+    // color: rgb(237, 132, 11);
+    color: lightsalmon;
+    font-size: 1.8rem;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-weight: 500;
   }
 
   &__list {
@@ -22,23 +26,86 @@
     flex-direction: row;
     list-style: none;
     justify-content: space-around;
+    align-items: center;
 
     &-item,
     &-itempost {
       margin-right: 1.25rem;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       font-weight: 500;
       color: gray;
       cursor: pointer;
     }
 
     &-itempost {
-      background-color: rgb(181, 176, 176);
+      background-color: rgb(220, 212, 212);
       border: 1px solid gray;
-      padding: 0.5rem 1rem;
-      margin-left: 2.5rem;
-      margin-right: 2.5rem;
-      color: rgb(237, 132, 11);
+      border-radius: 2rem;
+      padding: 0.5rem 2rem;
+      margin-left: 3rem;
+      margin-right: 3rem;
+      color: lightsalmon;
     }
   }
+}
+
+.search {
+  margin: 20px;
+
+  &__photo {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.search > div {
+  display: inline-block;
+  position: relative;
+}
+
+.search > div:after {
+  content: "";
+  background: black;
+  width: 4px;
+  height: 20px;
+  position: absolute;
+  top: 40px;
+  right: 2px;
+  transform: rotate(135deg);
+}
+
+.search > div > input {
+  color: black;
+  font-size: 16px;
+  background: transparent;
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 35px;
+  transition: width 0.5s;
+}
+
+.search > div > input::placeholder {
+  color: black;
+  opacity: 0;
+  transition: opacity 150ms ease-out;
+}
+
+.search > div > input:focus::placeholder {
+  opacity: 1;
+}
+
+.search > div > input:focus,
+.search > div > input:not(:placeholder-shown) {
+  width: 250px;
 }

@@ -1,0 +1,31 @@
+.hero {
+  margin-top: 60px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Lora", serif;
+  }
+
+  &__title {
+    color: lightsalmon;
+    font-size: 2rem;
+    font-weight: 300;
+    position: absolute;
+    top: 18%;
+  }
+
+  &__title2 {
+    position: absolute;
+    top: 20%;
+    font-size: 6rem;
+  }
+
+  &__image {
+    width: 70%;
+    height: 40rem;
+    margin-top: 6rem;
+    object-fit: cover;
+  }
+}
