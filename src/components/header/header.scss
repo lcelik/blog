@@ -12,10 +12,10 @@
   flex-direction: row;
   justify-content: space-evenly;
   justify-content: baseline;
+  z-index: 999;
 
   &__logo {
-    // color: rgb(237, 132, 11);
-    color: lightsalmon;
+    color: lightcoral;
     font-size: 1.8rem;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     font-weight: 500;
@@ -39,73 +39,73 @@
 
     &-itempost {
       background-color: rgb(220, 212, 212);
-      border: 1px solid gray;
+      border: 1px solid rgb(220, 212, 212);
       border-radius: 2rem;
       padding: 0.5rem 2rem;
       margin-left: 3rem;
       margin-right: 3rem;
-      color: lightsalmon;
+      color: lightcoral;
     }
   }
 }
 
-.search {
-  margin: 20px;
+// .search {
+//   margin: 20px;
 
-  &__photo {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-}
+//   &__photo {
+//     width: 3rem;
+//     height: 3rem;
+//     border-radius: 50%;
+//     object-fit: cover;
+//   }
+// }
 
-.search-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
+// .search-container {
+//   display: flex;
+//   justify-content: space-around;
+//   align-items: center;
+// }
 
-.search > div {
-  display: inline-block;
-  position: relative;
-}
+// .search > div {
+//   display: inline-block;
+//   position: relative;
+// }
 
-.search > div:after {
-  content: "";
-  background: black;
-  width: 4px;
-  height: 20px;
-  position: absolute;
-  top: 40px;
-  right: 2px;
-  transform: rotate(135deg);
-}
+// .search > div:after {
+//   content: "";
+//   background: black;
+//   width: 4px;
+//   height: 20px;
+//   position: absolute;
+//   top: 40px;
+//   right: 2px;
+//   transform: rotate(135deg);
+// }
 
-.search > div > input {
-  color: black;
-  font-size: 16px;
-  background: transparent;
-  width: 25px;
-  height: 25px;
-  padding: 10px;
-  border: 1px solid black;
-  outline: none;
-  border-radius: 35px;
-  transition: width 0.5s;
-}
+// .search > div > input {
+//   color: black;
+//   font-size: 16px;
+//   background: transparent;
+//   width: 25px;
+//   height: 25px;
+//   padding: 10px;
+//   border: 1px solid black;
+//   outline: none;
+//   border-radius: 35px;
+//   transition: width 0.5s;
+// }
 
-.search > div > input::placeholder {
-  color: black;
-  opacity: 0;
-  transition: opacity 150ms ease-out;
-}
+// .search > div > input::placeholder {
+//   color: black;
+//   opacity: 0;
+//   transition: opacity 150ms ease-out;
+// }
 
-.search > div > input:focus::placeholder {
-  opacity: 1;
-}
+// .search > div > input:focus::placeholder {
+//   opacity: 1;
+// }
 
-.search > div > input:focus,
-.search > div > input:not(:placeholder-shown) {
-  width: 250px;
-}
+// .search > div > input:focus,
+// .search > div > input:not(:placeholder-shown) {
+//   width: 250px;
+// }

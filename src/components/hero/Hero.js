@@ -1,6 +1,6 @@
 import React from "react";
 import "../hero/hero.scss";
-import hero from "../../assets/images/womenintech.avif";
+import hero from "../../assets/images/woman-laptop.jpg";
 
 export default function Hero() {
   return (
