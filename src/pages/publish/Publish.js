@@ -8,8 +8,10 @@ export default function Publish() {
       <img className="publish__image" src={publishImg} alt="pulish img" />
       <form className="publish__form">
         <div className="publish__form-container">
-          <label htmlFor="fileInput"></label>
-          <i class="publishIcon fa-solid fa-plus"></i>
+          <label htmlFor="fileInput">
+            <i class="publishIcon fa-solid fa-plus"></i>
+          </label>
+
           <input type="file" id="fileInput" style={{ display: "none" }} />
           <input
             className="publish__input"

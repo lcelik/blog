@@ -1,5 +1,6 @@
 import React from "react";
 import "../login/login.scss";
+import { Link } from "react-router-dom";
 
 export default function Login() {
   return (
@@ -20,7 +21,11 @@ export default function Login() {
         ></input>
         <button className="login__button">Login</button>
       </form>
-      <button className="login__button-register">Register</button>
+      <button className="login__button-register">
+        <Link className="link" to="/register">
+          Register
+        </Link>
+      </button>
     </div>
   );
 }

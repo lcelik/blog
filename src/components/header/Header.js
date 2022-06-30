@@ -1,30 +1,60 @@
 import React from "react";
 import "../header/header.scss";
-// import photo from "../../assets/images/lidija.jpg";
+import { Link } from "react-router-dom";
+import myPhoto from "../../assets/images/lidija.jpg";
 
 export default function Header() {
+  const user = true;
   return (
     <div className="header">
       <h1 className="header__logo">
         WOMEN IN <br /> TECH BLOG
       </h1>
       <ul className="header__list">
-        <li className="header__list-item">HOME</li>
-        <li className="header__list-item">ABOUT ME</li>
-        <li className="header__list-itempost">PUBLISH</li>
-        <li className="header__list-item">LOGIN</li>
-        <li className="header__list-item">REGISTER</li>
-        <li className="header__list-item">LOGOUT</li>
+        <li className="header__list-item">
+          <Link className="link" to="/">
+            HOME
+          </Link>
+        </li>
+        <li className="header__list-item">
+          <Link className="link" to="/about">
+            ABOUT
+          </Link>
+        </li>
+        <li className="header__list-itempost">
+          <Link className="link" to="/publish">
+            PUBLISH
+          </Link>
+        </li>
+        <li className="header__list-item">
+          <Link className="link" to="/login">
+            LOGIN
+          </Link>
+        </li>
+        <li className="header__list-item">
+          <Link className="link" to="/register">
+            REGISTER
+          </Link>
+        </li>
+        <li className="header__list-item">{user && "LOGOUT"}</li>
       </ul>
-      <i class="fa-solid fa-magnifying-glass"></i>
-      {/* <div className="search-container">
-        <div className="search">
-          <div>
-            <input type="text" placeholder="Search..." required></input>
-          </div>
-        </div>
-        <img className="search__photo" src={photo} alt="" />
-      </div> */}
+      <i class="header__sreach-icon fa-solid fa-magnifying-glass"></i>
+      {user ? (
+        <img src={myPhoto} alt="" className="header__photo" />
+      ) : (
+        <ul className="header__list">
+          <li className="header__list-item">
+            <Link className="link" to="/login">
+              LOGIN
+            </Link>
+          </li>
+          <li className="header__list-item">
+            <Link className="link" to="/register">
+              REGISTER
+            </Link>
+          </li>
+        </ul>
+      )}
     </div>
   );
 }
