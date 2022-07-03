@@ -1,0 +1,18 @@
+@use "../partials/typography" as *;
+@use "../partials/variables" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Avenir Next";
+  //   color: $BrainFlix-Black;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}

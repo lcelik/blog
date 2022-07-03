@@ -1,0 +1,73 @@
+@use "../../styles/partials/resets.scss" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.header {
+  width: 100%;
+  height: 7rem;
+  background-color: $Alabaster;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  justify-content: baseline;
+  z-index: 999;
+  align-items: center;
+
+  &__logo {
+    color: lightcoral;
+    font-size: 1.8rem;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-weight: 600;
+    font-family: "Lora", serif;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+
+    &-item,
+    &-itempost {
+      margin-right: 1.25rem;
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: gray;
+      cursor: pointer;
+    }
+
+    &-itempost {
+      //   background-color: rgb(220, 212, 212);
+
+      background-color: white;
+      border: 1px solid rgb(220, 212, 212);
+
+      border-radius: 2rem;
+      padding: 0.5rem 2rem;
+      margin-left: 3rem;
+      margin-right: 3rem;
+      color: gray;
+    }
+  }
+
+  &__photo {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+  }
+
+  &__sreach-icon {
+    font-size: 1.5rem;
+    color: lightcoral;
+    cursor: pointer;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
