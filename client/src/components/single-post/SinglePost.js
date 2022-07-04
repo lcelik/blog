@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../single-post/singlePost.scss";
 import post from "../../assets/images/women.png";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import axios from "axios";
 
 export default function SinglePost() {
@@ -40,7 +40,10 @@ export default function SinglePost() {
         </h1>
         <div className="single-post__info-container">
           <span className="single-post__author">
-            Author: <b>{post.username}</b>
+            Author:
+            <Link to={`/?user=${post.username}`} className="link">
+              <b>{post.username}</b>
+            </Link>
           </span>
           <span className="single-post__date">
             {new Date(post.createdAt).toDateString()}

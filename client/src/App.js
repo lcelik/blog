@@ -10,7 +10,7 @@ import Register from "./pages/register/Register";
 import About from "./pages/about/About";
 
 function App() {
-  const user = true;
+  const user = false;
   return (
     <div className="App">
       <BrowserRouter>

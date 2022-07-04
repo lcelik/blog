@@ -1,5 +1,4 @@
 import "../post/post.scss";
-// import img from "../../assets/images/womenintech.avif";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -15,7 +14,6 @@ export default function Post({ post }) {
             <span className="post__category">{c.name}</span>
           ))}
         </div>
-        {/* I NEED HELP HERE */}
         <Link to={`/post/${post._id}`} className="link">
           <h3 className="post__title">{post.title}</h3>
         </Link>
