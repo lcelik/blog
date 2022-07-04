@@ -8,9 +8,12 @@ import Settings from "./pages/settings/Settings";
 import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
 import About from "./pages/about/About";
+import { Context } from "./context/Context";
+import { useContext } from "react";
 
 function App() {
-  const user = false;
+  // const user = false;
+  const { user } = useContext(Context);
   return (
     <div className="App">
       <BrowserRouter>

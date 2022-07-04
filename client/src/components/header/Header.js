@@ -2,9 +2,16 @@ import React from "react";
 import "../header/header.scss";
 import { Link } from "react-router-dom";
 import myPhoto from "../../assets/images/lidija.jpg";
+import { Context } from "../../context/Context";
+import { useContext } from "react";
 
 export default function Header() {
-  const user = true;
+  const { user, dispatch } = useContext(Context);
+
+  const handleLogout = () => {
+    dispatch({ type: "LOGOUT" });
+  };
+
   return (
     <div className="header">
       <h1 className="header__logo">
@@ -36,11 +43,14 @@ export default function Header() {
             REGISTER
           </Link>
         </li>
-        <li className="header__list-item">{user && "LOGOUT"}</li>
+        <li className="header__list-item" onClick={handleLogout}>
+          {user && "LOGOUT"}
+        </li>
       </ul>
       <i className="header__sreach-icon fa-solid fa-magnifying-glass"></i>
       {user ? (
-        <img src={myPhoto} alt="" className="header__photo" />
+        // <img src={myPhoto} alt="" className="header__photo" />
+        <img src={user.profilePic} alt="" className="header__photo" />
       ) : (
         <ul className="header__list">
           <li className="header__list-item">

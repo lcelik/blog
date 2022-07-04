@@ -9,7 +9,7 @@ import { useRef } from "react";
 export default function Login() {
   const userRef = useRef();
   const passwordRef = useRef();
-  const { user, dispatch, isFetching } = useContext(Context);
+  const { dispatch, isFetching } = useContext(Context);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -27,8 +27,6 @@ export default function Login() {
       dispatch({ type: "LOGIN_FAILURE" });
     }
   };
-
-  console.log(user);
 
   return (
     <div className="login">
@@ -52,7 +50,11 @@ export default function Login() {
           Login
         </button>
       </form>
-      <button className="login__button-register">
+      <button
+        className="login__button-register"
+        type="submit"
+        disabled={isFetching}
+      >
         <Link className="link" to="/register">
           Register
         </Link>
