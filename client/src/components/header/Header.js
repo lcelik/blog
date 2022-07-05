@@ -7,6 +7,7 @@ import { useContext } from "react";
 
 export default function Header() {
   const { user, dispatch } = useContext(Context);
+  const PF = "http://localhost:5000/images/";
 
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });
@@ -49,8 +50,9 @@ export default function Header() {
       </ul>
       <i className="header__sreach-icon fa-solid fa-magnifying-glass"></i>
       {user ? (
-        // <img src={myPhoto} alt="" className="header__photo" />
-        <img src={user.profilePic} alt="" className="header__photo" />
+        <Link to="/settings">
+          <img src={PF + user.profilePic} alt="" className="header__photo" />
+        </Link>
       ) : (
         <ul className="header__list">
           <li className="header__list-item">
