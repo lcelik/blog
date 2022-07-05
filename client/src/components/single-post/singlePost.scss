@@ -4,6 +4,8 @@
   &__container {
     padding: 1.5rem;
     padding-right: 0rem;
+    display: flex;
+    flex-direction: column;
   }
 
   &__photo {
@@ -53,5 +55,40 @@
 
   &__description::first-letter {
     margin-left: 1.25rem;
+  }
+
+  &__title-input {
+    margin: 10px;
+    font-size: 1.5rem;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    color: #666;
+  }
+
+  &__title-input:focus {
+    outline: none;
+  }
+
+  &__description-input {
+    border: none;
+    color: #666;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  &__description-input:focus {
+    outline: none;
+  }
+
+  &__editbutton {
+    border: none;
+    padding: 5px;
+    width: 10%;
+    border-radius: 5px;
+    background-color: grey;
+    color: white;
+    margin-top: 1rem;
+    cursor: pointer;
+    align-self: flex-end;
   }
 }
