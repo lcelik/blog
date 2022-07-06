@@ -1,4 +1,5 @@
 import "./App.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Header from "./components/header/Header";
 import Home from "./pages/home-page/Home";
@@ -10,9 +11,9 @@ import Register from "./pages/register/Register";
 import About from "./pages/about/About";
 import { Context } from "./context/Context";
 import { useContext } from "react";
+import Footer from "./components/footer/Footer";
 
 function App() {
-  // const user = false;
   const { user } = useContext(Context);
   return (
     <div className="App">
@@ -27,6 +28,7 @@ function App() {
           <Route path="/settings">{user ? <Settings /> : <Register />}</Route>
           <Route path="/post/:postId" component={SinglePage} />
         </Switch>
+        <Footer />
       </BrowserRouter>
     </div>
   );

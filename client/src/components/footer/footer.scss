@@ -1,0 +1,33 @@
+@use "../../styles/partials/resets.scss" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.footer {
+  color: var(--primary-dark-grey);
+  padding: 3rem;
+  background-color: $Alabaster;
+  //   position: sticky;
+  //   z-index: 10;
+  
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--primary-dark-grey);
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--primary-pink);
+  cursor: pointer;
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
+.p {
+  font-size: 1rem;
+  font-family: inherit;
+  color: gray;
+}

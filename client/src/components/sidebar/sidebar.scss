@@ -18,7 +18,7 @@
     list-style: none;
     justify-content: center;
     align-items: center;
-    // text-align: center;
+   
   }
 
   &__title {
@@ -50,4 +50,11 @@
 
 .icon {
   padding: 1rem;
+}
+
+.sidebar-title {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  border-top: 1px solid grey;
 }

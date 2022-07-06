@@ -62,7 +62,7 @@ export default function Settings() {
               alt="settings img"
             />
             <label htmlFor="fileInput">
-              <i class="settings__profile-icon fa-solid fa-user"></i>
+              <i className="settings__profile-icon fa-solid fa-user"></i>
             </label>
             <input
               type="file"
