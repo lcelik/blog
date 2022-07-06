@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../publish/publish.scss";
-// import publishImg from "../../assets/images/women.png";
 import { useContext } from "react";
 import axios from "axios";
 import { Context } from "../../context/Context";

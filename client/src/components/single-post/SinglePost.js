@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
 import "../single-post/singlePost.scss";
-// import post from "../../assets/images/women.png";
 import { Link, useLocation } from "react-router-dom";
 import axios from "axios";
 import { Context } from "../../context/Context";
@@ -44,7 +43,7 @@ export default function SinglePost() {
         title,
         desc,
       });
-      // window.location.reload();
+
       setUpdateMode(false);
     } catch (err) {}
   };
@@ -84,7 +83,6 @@ export default function SinglePost() {
             )}
           </h1>
         )}
-        {/* <img className="single-post__photo" src={post} alt="post-photo" /> */}
 
         <div className="single-post__info-container">
           <span className="single-post__author">
