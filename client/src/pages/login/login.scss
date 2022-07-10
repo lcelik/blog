@@ -1,3 +1,7 @@
+@use "../../styles/partials/resets.scss" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
 .login {
   height: calc(100vh - 50px);
   display: flex;
@@ -30,16 +34,16 @@
 
   &__input {
     padding: 10px;
-    background-color: white;
+    background-color: $white;
     border: none;
   }
 
   &__button {
     margin-top: 20px;
-    background-color: lightcoral;
+    background-color: $logo-color;
     border: none;
     cursor: pointer;
-    color: white;
+    color: $white;
     border-radius: 10px;
     padding: 10px;
   }
@@ -57,6 +61,6 @@
     border: none;
     padding: 10px;
     border-radius: 10px;
-    color: white;
+    color: $white;
   }
 }

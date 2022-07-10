@@ -1,3 +1,7 @@
+@use "../../styles/partials/resets.scss" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
 .publish {
   padding-top: 3.15rem;
   height: 50rem;
@@ -29,7 +33,7 @@
     position: absolute;
     top: 1.25rem;
     right: 3.125rem;
-    color: white;
+    color: $white;
     background-color: teal;
     padding: 10px;
     border: none;

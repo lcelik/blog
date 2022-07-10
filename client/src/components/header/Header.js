@@ -1,7 +1,6 @@
 import React from "react";
 import "../header/header.scss";
 import { Link } from "react-router-dom";
-// import myPhoto from "../../assets/images/lidija.jpg";
 import { Context } from "../../context/Context";
 import { useContext } from "react";
 

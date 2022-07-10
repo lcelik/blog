@@ -1,3 +1,7 @@
+@use "../../styles/partials/resets.scss" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
 .about {
   display: flex;
   flex-direction: column;
@@ -5,19 +9,19 @@
   padding: 2rem;
 
   &__title {
-    color: gray;
+    color: $grey;
     margin-top: 2rem;
   }
 
   &__text {
     font-size: 2rem;
-    color: gray;
+    color: $grey;
     margin: 2.5rem 9rem;
     align-self: center;
   }
 
   &__logo {
-    color: lightcoral;
+    color: $logo-color;
     font-size: 1.8rem;
     font-weight: 600;
     font-family: "Lora", serif;

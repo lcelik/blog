@@ -1,3 +1,7 @@
+@use "../../styles/partials/resets.scss" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
 .single-post {
   flex: 9;
 
@@ -85,8 +89,8 @@
     padding: 5px;
     width: 10%;
     border-radius: 5px;
-    background-color: grey;
-    color: white;
+    background-color: $grey;
+    color: $white;
     margin-top: 1rem;
     cursor: pointer;
     align-self: flex-end;

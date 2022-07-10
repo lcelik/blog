@@ -6,9 +6,6 @@
   color: var(--primary-dark-grey);
   padding: 3rem;
   background-color: $Alabaster;
-  //   position: sticky;
-  //   z-index: 10;
-  
 }
 
 .footer a {
@@ -29,5 +26,5 @@
 .p {
   font-size: 1rem;
   font-family: inherit;
-  color: gray;
+  color: $grey;
 }

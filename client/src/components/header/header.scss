@@ -16,7 +16,7 @@
   align-items: center;
 
   &__logo {
-    color: lightcoral;
+    color: $logo-color;
     font-size: 1.8rem;
     font-weight: 600;
     font-family: "Lora", serif;
@@ -34,19 +34,19 @@
       margin-right: 1.25rem;
       font-size: 1.3rem;
       font-weight: 500;
-      color: gray;
+      color: $grey;
       cursor: pointer;
     }
 
     &-itempost {
-      background-color: white;
+      background-color: $white;
       border: 1px solid rgb(220, 212, 212);
 
       border-radius: 2rem;
       padding: 0.5rem 2rem;
       margin-left: 3rem;
       margin-right: 3rem;
-      color: gray;
+      color: $grey;
     }
   }
 
@@ -60,7 +60,7 @@
 
   &__sreach-icon {
     font-size: 1.5rem;
-    color: lightcoral;
+    color: $logo-color;
     cursor: pointer;
   }
 }

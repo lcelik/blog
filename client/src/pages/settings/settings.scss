@@ -1,3 +1,7 @@
+@use "../../styles/partials/resets.scss" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
 .settings {
   display: flex;
 
@@ -15,7 +19,7 @@
   &__update-title {
     font-size: 2rem;
     margin-bottom: 1.25rem;
-    color: lightcoral;
+    color: $logo-color;
     cursor: pointer;
   }
 
@@ -47,8 +51,8 @@
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
-    background-color: lightcoral;
-    color: white;
+    background-color: $logo-color;
+    color: $white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,11 +66,11 @@
   }
 
   &__form > input {
-    color: gray;
+    color: $grey;
     margin: 10px 0;
     height: 2rem;
     border: none;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid $light-grey;
   }
 
   &__button {
@@ -74,8 +78,8 @@
     align-self: center;
     border: none;
     border-radius: 10px;
-    color: white;
-    background-color: lightcoral;
+    color: $white;
+    background-color: $logo-color;
     margin-top: 1.25rem;
     padding: 0.8rem;
     cursor: pointer;
